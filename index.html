@@ -1,80 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  Report for
-  Jeremy Robson
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="card card-1">
+        <div class="first-card-top-row">
+          <img src="./images/image-jeremy.png" alt="User Avatar" />
+          <p class="subtitle">Report for</p>
+          <span class="user-name">Jeremy Robson</span>
+        </div>
+        <div class="first-card-bottom-row">
+          <ul>
+            <li>Daily</li>
+            <li class="active-button">Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cards-wrapper">
+        <div class="grid-card card-2">
+          <div class="card-top-row work">
+            <img src="./images/icon-work.svg" />
+          </div>
+          <div class="card-bottom-row">
+            <div class="bottom-top-row">
+              <p class="subtitle active-button">Work</p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="Elipsis Icon"
+                class="elipsis"
+              />
+            </div>
+            <div class="bottom-bottom-row">
+              <span class="hours">32hrs</span>
+              <span class="subtitle">Last Week - 36hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card card-3">
+          <div class="card-top-row play">
+            <img src="./images/icon-play.svg" />
+          </div>
+          <div class="card-bottom-row">
+            <div class="bottom-top-row">
+              <p class="subtitle active-button">Play</p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="Elipsis Icon"
+                class="elipsis"
+              />
+            </div>
+            <div class="bottom-bottom-row">
+              <span class="hours">10hrs</span>
+              <span class="subtitle">Last Week - 8hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card card-4">
+          <div class="card-top-row study">
+            <img src="./images/icon-study.svg" />
+          </div>
+          <div class="card-bottom-row">
+            <div class="bottom-top-row">
+              <p class="subtitle active-button">Study</p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="Elipsis Icon"
+                class="elipsis"
+              />
+            </div>
+            <div class="bottom-bottom-row">
+              <span class="hours">4hrs</span>
+              <span class="subtitle">Last Week - 7hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card card-5">
+          <div class="card-top-row exercise">
+            <img src="./images/icon-exercise.svg" />
+          </div>
+          <div class="card-bottom-row">
+            <div class="bottom-top-row">
+              <p class="subtitle active-button">Exercise</p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="Elipsis Icon"
+                class="elipsis"
+              />
+            </div>
+            <div class="bottom-bottom-row">
+              <span class="hours">4hrs</span>
+              <span class="subtitle">Last Week - 5hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card card-6">
+          <div class="card-top-row social">
+            <img src="./images/icon-social.svg" />
+          </div>
+          <div class="card-bottom-row">
+            <div class="bottom-top-row">
+              <p class="subtitle active-button">Social</p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="Elipsis Icon"
+                class="elipsis"
+              />
+            </div>
+            <div class="bottom-bottom-row">
+              <span class="hours">5hrs</span>
+              <span class="subtitle">Last Week - 10hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-card card-7">
+          <div class="card-top-row self-care">
+            <img src="./images/icon-self-care.svg" />
+          </div>
+          <div class="card-bottom-row">
+            <div class="bottom-top-row">
+              <p class="subtitle active-button">Self Care</p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="Elipsis Icon"
+                class="elipsis"
+              />
+            </div>
+            <div class="bottom-bottom-row">
+              <span class="hours">2hrs</span>
+              <span class="subtitle">Last Week - 2hrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
