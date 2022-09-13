@@ -184,7 +184,7 @@ body {
 
 .hours {
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -196,6 +196,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hours {
+    font-size: 2em;
+  }
+
   .main {
     align-items: flex-start;
   }
@@ -214,6 +218,28 @@ body {
 
   .card-1 {
     width: 190px;
+  }
+
+  .first-card-top-row {
+    padding-left: 20px;
+  }
+
+  .card-bottom-row {
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hours {
+    font-size: 2em;
+  }
+
+  .grid-card {
+    width: 170px;
+  }
+
+  .card-1 {
+    width: 170px;
   }
 
   .first-card-top-row {
